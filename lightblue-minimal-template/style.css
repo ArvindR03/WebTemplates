@@ -1,0 +1,98 @@
+.masterbox {
+    border-radius: 50px;
+    background-color: white;
+    max-width: 86%;
+    height: 2000px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+@keyframes fade-in-with-movement {
+    from {
+        opacity: 0;
+        margin-top: 700px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 90px;
+    }
+}
+
+@keyframes fade-in-only {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.nav {
+    animation: fade-in-only;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    overflow: hidden;
+}
+
+.nav a.icon {
+    float: left;
+}
+
+.nav a {
+    float: right;
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.container {
+    animation: fade-in-with-movement;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+}
+
+/*CHANGE THE COLOR OF THE BACKGROUND HERE*/
+
+body {
+    background: rgb(0,255,119);
+    background: linear-gradient(45deg, rgba(0,255,119,1) 0%, rgba(0,232,255,1) 100%);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.inner {
+    padding: 30px 50px;
+}
+
+h1#header {
+    animation: fade-in-only;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    padding-top: 70px;
+    margin: auto;
+    text-align: center;
+    font-size: 120px;
+}
+
+h1#footer {
+    padding-top: 70px;
+    margin: auto;
+    margin-bottom: 200px;
+    text-align: center;
+    font-size: 120px;
+}
+
+span#header-dot {
+    text-shadow: 5px 5px white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+}
